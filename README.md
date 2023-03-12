@@ -1,0 +1,1 @@
+Hello future's Lucas, this is your first landing page project with HTML and CSS. I hope you feel a happy nostalgia looking it. bye! :D
