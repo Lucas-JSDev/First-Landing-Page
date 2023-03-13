@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Caveat&family=Righteous&family=Sarala&family=Tilt+Neon&display=swap');
 
+/* CSS reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +12,11 @@
 body {
     font-size: 100%;
     font-family: 'Sarala', sans-serif;
-    background: linear-gradient(68.15deg, #ffffff 16.62%, #abaad8 85.61%);
+    background: linear-gradient(68.15deg, #f5cde5 16.62%, #9d9cd3 85.61%);
 
 }
+
+/* CSS for fixed menu bar */
 
 header {
     display: flex;
@@ -26,6 +30,7 @@ header {
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 15px black;
 }
 
 .logo-image {
@@ -66,6 +71,8 @@ main {
     padding-top: 100px;
 }
 
+/* CSS for section of home page */
+
 .home {
     display: flex;
     flex-direction: row;
@@ -102,5 +109,73 @@ main {
     font-family: 'Sarala', sans-serif;
     border: none;
     border-radius: 35px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+}
 
+.home-text-button:hover {
+    color: #0004ff;
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+ /* CSS for section of portfolio */
+
+.portfolio {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-top: 4px solid #ffffff;
+}
+.portfolio-tittle {
+    font-family: 'Sarala', sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 48px;
+    text-shadow: 2px 2px 10px #ffffff;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 0px 24px 96px 24px;
+}
+
+.portfolio-container-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    gap: 8px;
+}
+
+.portfolio-container-item img {
+    width: 200px;
+    height: 200px;
+    border: 12px solid #ffffff;
+    border-radius: 32px;
+    box-shadow: 2px 2px 15px black;
+    object-fit: cover;
+    background-color: #ffffff;
+}
+
+.portfolio-container-item p {
+    max-width: 200px;
+    color: #000000;
+}
+
+.portfolio-container-item a {
+    width: 200px;
+    height: 200px;
+    border-radius: 32px;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-container-item a:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px #000000;
 }
