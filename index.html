@@ -7,22 +7,24 @@
     <meta name="description" content="A simple landing page for test my skills with HTML and CSS">
     <title>Lucas WEB-DEV</title>
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
 </head>
 <body>
     <header>
             <a href="#"><img src="./img/logo.png" alt="Lucas WEB-DEV" class="logo-image"></a>
         
             <nav class="menu">
-                <a href="#" class="menu-item">Home</a>
-                <a href="#" class="menu-item">Portfolio</a>
-                <a href="#" class="menu-item">About</a>
-                <a href="#" class="menu-item">Contact</a>
+                <a href="#homeid" class="menu-item">Home</a>
+                <a href="#portfolioid" class="menu-item">Portfolio</a>
+                <a href="#contactid" class="menu-item">Contact</a>
+                <a href="#aboutid" class="menu-item">About</a>
             </nav>
         
     </header>
 
     <main>
-        <section class="home">
+        <section id="homeid" class="home">
             <div class="home-text">
                 <h1 class="home-text-tittle">Web Developer</h1>
                 <h2 class="home-text-subtittle">This is a demo site to show you what quality is.</h2>
@@ -34,7 +36,7 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section id="portfolioid" class="portfolio">
             
             <h1 class="portfolio-tittle">My Unbelievable Portfolio</h1>
             <div class="portfolio-container">
@@ -60,17 +62,19 @@
             </div>
         </section>
 
-        <section>
-            <h2>You can find me lounging other places around the web</h2>
-            <div>
+        <section id="contactid" class="contact">
+            <h2 class="contact-tittle">You can find me lounging other places around the web</h2>
+            <div class="contact-container">
                 <h3>Contacts</h3>
-                <a href="#">Gmail</a>
-                <a href="#">Instagram</a>
-                <a href="#">Whatsapp</a>
-            </div>
+                <a href="#"><i class="fab fa-google"></i> Gmail</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+              </div>
+              
+            <img src="./img/contact-image.png" alt="Gmail owl">
         </section>
 
-        <section>
+        <section id="aboutid" class="about">
             <h3>It is the custom of a fool, when he errs, to complain of others. It is customary for a wise man to complain about himself. -Socrates</h3>
         </section>
     </main>
