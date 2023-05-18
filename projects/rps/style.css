@@ -148,3 +148,49 @@ footer {
 footer h4 {
     text-align: center;
 }
+
+/* CSS for modal */
+.resultContainer::backdrop {
+    background-color: #000000;
+    opacity: 0.85;
+}
+
+.resultContainer {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    box-shadow: 2px 2px 5px #ffffff;
+    border-radius: 30px;
+    background: linear-gradient(68.15deg, #f5cde5 16.62%, #9d9cd3 85.61%);
+}
+
+#resultText {
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    color: #ffffff;
+    font-size: 54px;
+    text-shadow: 1px 1px 4px black;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.resultBtn {
+    width: 160px;
+    height: 50px;
+    border: none;
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: #0004ff;
+    border-radius: 30px;
+    font-size: 24px;
+    font-family: 'Sarala', sans-serif;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.resultBtn:hover {
+    color: #0004ff;
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
